@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>MedPortal</title>
+</head>
+<body>
+    <div class="wrapper user-account">
+        <header class="header">
+            <div class="header-content">
+                <div class="header-content-logo">
+                    <a href="#!">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div><!-- ./header-content-logo -->
+                <div class="header-content-nav">
+                    <ul class="desktop-link-list">
+                        <li>
+                            <a href="#!" class="active">
+                                <span>
+                                    Формирование траектории
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>
+                                    Мой план
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>
+                                    Портфолио
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>
+                                    Расписание
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" id="referenceDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.6998 18.1C35.3998 28.2 27.6998 35.8 17.8998 35.8C7.69982 35.7 0.199816 27.8 0.299816 18C0.399816 7.79999 8.19982 0.299988 17.9998 0.299988C27.9998 0.299988 35.4998 8.09999 35.6998 18.1ZM18.0998 2.39999C9.49982 2.39999 2.49982 9.39999 2.39982 17.9C2.29982 26.5 9.39982 33.6 17.8998 33.7C26.3998 33.7 33.4998 26.8 33.5998 18.2C33.6998 9.59999 26.5998 2.49999 18.0998 2.39999Z" fill="#195EA0"/>
+                                    <path d="M23.8002 15C23.8002 16.4 22.9002 17.9 21.6002 19.1C20.4002 20.3 19.1002 21.3 18.8002 23.1C18.8002 23.4 18.1002 23.8 17.8002 23.7C17.5002 23.6 17.0002 23 17.0002 22.8C17.3002 21.7 17.6002 20.5 18.2002 19.6C18.8002 18.6 19.9002 17.9 20.6002 17C21.7002 15.7 21.9002 14.2 21.1002 12.7C20.4002 11.3 19.0002 10.6 17.4002 10.8C15.9002 11 14.8002 11.9 14.4002 13.3C14.3002 13.6 14.2002 14.3 14.0002 14.6C13.7002 15 13.6002 15.4 13.1002 15.4C12.6002 15.4 12.2002 14.6 12.2002 14.2C12.2002 11.9 13.4002 10.2 15.4002 9.29998C17.6002 8.19998 19.7002 8.49998 21.6002 9.99998C23.1002 11.1 23.8002 12.7 23.8002 15Z" fill="#195EA0"/>
+                                    <path d="M18.0994 28.6C19.0383 28.6 19.7994 27.8389 19.7994 26.9C19.7994 25.9611 19.0383 25.2 18.0994 25.2C17.1605 25.2 16.3994 25.9611 16.3994 26.9C16.3994 27.8389 17.1605 28.6 18.0994 28.6Z" fill="#195EA0"/>
+                                </svg>
+                                <span class="list-link-title">
+                                    Справка
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="referenceDropdown">
+                                <li><a class="dropdown-item" href="#">Вирткальный тур</a></li>
+                                <li><a class="dropdown-item" href="#">Помощь</a></li>
+                                <li><a class="dropdown-item" href="#">Справка</a></li>
+                                <li><a class="dropdown-item" href="#">Руководство пользователя</a></li>
+                            </ul>
+                        </li>
+                        <li class="visually-impaired">
+                            <a href="#!">
+                                <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.1 9C20.5 13.4 16.3 16.5 11.4 16.5C6.50005 16.5 2.40005 13.4 0.800049 9C2.40005 4.6 6.60005 1.5 11.5 1.5C16.4 1.5 20.5 4.7 22.1 9Z" stroke="#195EA0" stroke-width="1.5" stroke-miterlimit="10"/>
+                                    <path d="M11.5001 12.8C13.5988 12.8 15.3001 11.0987 15.3001 9C15.3001 6.90131 13.5988 5.2 11.5001 5.2C9.40139 5.2 7.70007 6.90131 7.70007 9C7.70007 11.0987 9.40139 12.8 11.5001 12.8Z" stroke="#195EA0" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="notification-btn">
+                            <a href="#" class="dropdown-toggle" role="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_556_2350)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3586 0.00629966C15.7536 0.073604 15.2523 0.629256 15.2633 1.21934V2.49343C13.0841 2.75329 11.0571 3.73959 9.51186 5.29204C7.77229 7.02943 6.67386 9.34126 6.21186 11.8002L4.56186 20.5967C4.22243 22.4218 3.52314 22.7959 2.52686 23.4313C2.02871 23.7506 1.42057 24.0887 0.889429 24.6929C0.358286 25.2986 0 26.1799 0 27.2051C0 28.955 1.49286 30.4028 3.3 30.4028H10.3243C10.5411 33.5176 13.2314 36 16.5 36C19.7686 36 22.4604 33.5192 22.6757 30.4028H29.7C31.5071 30.4028 33 28.955 33 27.2051C33 26.1799 32.6417 25.2986 32.1106 24.6929C31.5794 24.0887 30.9713 23.7506 30.4731 23.4313C29.4769 22.7959 28.7776 22.4218 28.4366 20.5952L26.7866 11.8002C26.3261 9.34126 25.2277 7.0263 23.4866 5.29204C21.9417 3.7399 19.9154 2.75363 17.7367 2.49343V1.21934C17.7493 0.538474 17.0563 -0.0719612 16.3586 0.00629966ZM16.5 4.81621C18.6717 4.81621 20.3736 5.62073 21.7077 6.95273C23.0434 8.28473 23.9784 10.1755 24.3634 12.226L26.0134 21.0209C26.4817 23.5174 28.05 24.7477 29.1201 25.4301C29.6544 25.7729 30.0347 26.0249 30.228 26.244C30.4213 26.4616 30.5266 26.6338 30.5266 27.2051C30.5266 27.6684 30.1793 28.0033 29.7 28.0033H3.3C2.82229 28.0033 2.475 27.6684 2.475 27.2051C2.475 26.6338 2.57871 26.4616 2.772 26.2425C2.96529 26.0233 3.34557 25.7729 3.87986 25.4301C4.95 24.7477 6.51829 23.5174 6.98657 21.0209L8.63657 12.2244C9.02157 10.174 9.95814 8.28473 11.2923 6.95273C12.628 5.62073 14.3283 4.81621 16.5 4.81621ZM12.8653 30.4028H20.1347C20.0374 31.2911 19.6109 32.1112 18.9388 32.7029C18.2666 33.2945 17.397 33.6152 16.5 33.6021C14.5671 33.6021 13.0743 32.2138 12.8653 30.4028Z" fill="#195EA0"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_556_2350">
+                                    <rect width="33" height="36" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="notificationDropdown">
+                                <li><a class="dropdown-item" href="#">Новых уведомлений нет</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.3602 26.0743C3.4802 26.0743 1.2002 23.8225 1.2002 20.978V7.4669C1.2002 4.62246 3.4802 2.37061 6.3602 2.37061H27.6002C30.4802 2.37061 32.7602 4.62246 32.7602 7.4669V21.0965C32.7602 23.8225 30.6002 26.0743 27.8402 26.1928C26.8802 26.1928 26.1602 26.3113 25.6802 26.3113L22.2002 29.8669C21.3602 30.6965 20.0402 30.6965 19.2002 29.8669C18.8402 29.5113 18.6002 28.9188 18.6002 28.3262V26.0743H6.3602Z" stroke="#195EA0" stroke-width="2"/>
+                                    <path d="M10.6547 16.3681C11.5163 16.3681 12.2147 15.6783 12.2147 14.8274C12.2147 13.9764 11.5163 13.2866 10.6547 13.2866C9.79316 13.2866 9.09473 13.9764 9.09473 14.8274C9.09473 15.6783 9.79316 16.3681 10.6547 16.3681Z" fill="#195EA0"/>
+                                    <path d="M17.0151 16.3681C17.8766 16.3681 18.5751 15.6783 18.5751 14.8274C18.5751 13.9764 17.8766 13.2866 17.0151 13.2866C16.1535 13.2866 15.4551 13.9764 15.4551 14.8274C15.4551 15.6783 16.1535 16.3681 17.0151 16.3681Z" fill="#195EA0"/>
+                                    <path d="M23.2543 16.3681C24.1159 16.3681 24.8143 15.6783 24.8143 14.8274C24.8143 13.9764 24.1159 13.2866 23.2543 13.2866C22.3928 13.2866 21.6943 13.9764 21.6943 14.8274C21.6943 15.6783 22.3928 16.3681 23.2543 16.3681Z" fill="#195EA0"/>
+                                </svg>
+                                <span class="list-link-title">
+                                    Профессиональное общение
+                                </span>
+                            </a>
+                        </li>
+                        <li class="user-profile">
+                            <a href="#!">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.0001 42.5335C33.3404 42.5335 42.5335 33.3404 42.5335 22.0001C42.5335 10.6599 33.3404 1.4668 22.0001 1.4668C10.6599 1.4668 1.4668 10.6599 1.4668 22.0001C1.4668 33.3404 10.6599 42.5335 22.0001 42.5335Z" stroke="#195EA0" stroke-width="2"/>
+                                    <path d="M22.0003 26.4001C26.0504 26.4001 29.3337 23.1168 29.3337 19.0667C29.3337 15.0166 26.0504 11.7334 22.0003 11.7334C17.9502 11.7334 14.667 15.0166 14.667 19.0667C14.667 23.1168 17.9502 26.4001 22.0003 26.4001Z" stroke="#195EA0" stroke-width="2"/>
+                                    <path d="M34.8234 38.1332C33.4154 31.3983 28.2087 26.3999 22.0003 26.3999C15.8168 26.3999 10.6263 31.3602 9.19336 38.057" stroke="#195EA0" stroke-width="2"/>
+                                </svg>  
+                                <div class="user-profile-name">
+                                    <h6>
+                                        Азиза Астанова
+                                    </h6>
+                                    <span>
+                                        Мой профиль
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="desktop-exit">
+                            <a href="#" class="dropdown-toggle" role="button" id="exitDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                                <svg width="8" height="38" viewBox="0 0 8 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="34" r="4" fill="#195EA0"/>
+                                    <circle cx="4" cy="19" r="4" fill="#195EA0"/>
+                                    <circle cx="4" cy="4" r="4" fill="#195EA0"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="exitDropdown">
+                                <li><a class="dropdown-item" href="#">Выйти из системы</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-exit">
+                            <a href="#!">
+                                <svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g fill="currentColor">
+                                            <path d="M9.033892,0 L9.033892,11.7897042 L10.9655354,11.7897042 L10.9655354,0 L9.033892,0 Z M13.3955784,1.78255725 L13.3955784,3.75871504 C14.8130523,4.40266419 16.0151762,5.43545244 16.858136,6.73485882 C17.701011,8.03506321 18.14977,9.5469913 18.1522499,11.0923936 C18.1522499,13.2342008 17.2928209,15.2882272 15.764323,16.8033893 C14.2350833,18.3176904 12.1618727,19.1684282 10.0001058,19.1684282 C7.83749104,19.1684282 5.76432285,18.3177534 4.23588856,16.8033893 C2.70664883,15.2882692 1.84796169,13.2342008 1.84796169,11.0923936 C1.84961921,9.5469073 2.2992006,8.03497921 3.14207562,6.73569883 C3.98495064,5.43631345 5.18631144,4.40363019 6.60378534,3.76039505 L6.60378534,1.78589627 C4.67131535,2.4774318 3.00133503,3.7415369 1.81902933,5.4059052 C0.637529908,7.07115551 0.00248040432,9.05636438 4.87366563e-07,11.0923306 C-0.000827423371,13.7198716 1.05318116,16.2398918 2.92842124,18.0977766 C4.80376835,19.9558087 7.34733651,21 9.99999982,21 C12.6520273,21 15.1955318,19.9557247 17.0707306,18.0977766 C18.9460777,16.2397448 20,13.7196616 20,11.0923306 C19.9983446,9.05630138 19.3624706,7.0695385 18.1809703,5.40422519 C16.99947,3.73815587 15.3286419,2.47407177 13.3953686,1.78253625 L13.3955784,1.78255725 Z" id="Fill-1"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="list-link-title">
+                                    Выйти
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu-icon">
+                        <span></span>
+                    </div>
+                </div><!-- ./header-content-nav -->
+            </div><!-- ./header-content -->
+        </header>
+        <main class="main">
+            <div class="profile-container">
+                <div class="title">
+                    Мой профиль
+                </div>
+                <div class="profile-personal-data">
+                    <label class="profile-personal-img" for="file">
+                        <div class="profile-personal-inner">
+                            <svg class="profile-personal-inner__icon" xmlns="http://www.w3.org/2000/svg" viewBox="-1 1 58 58">
+                                <path fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="M18.608 15l-4.824 8.323H4.135A4.139 4.139 0 0 0 0 27.483V53.84A4.139 4.139 0 0 0 4.135 58h42.73A4.139 4.139 0 0 0 51 53.839V27.484a4.139 4.139 0 0 0-4.135-4.161h-9.649L32.392 15H18.608zM25 29c6.059 0 11 4.941 11 11s-4.941 11-11 11-11-4.941-11-11 4.941-11 11-11z"></path>
+                            </svg>
+                            <span class="profile-personal-inner__text">
+                                Добавить фото профиля
+                            </span>
+                        </div>
+                        <input id="file" type="file">
+                        <svg class="profile-camera-icon" xmlns="http://www.w3.org/2000/svg" width="59" height="58" viewBox="0 0 59 58">
+                            <path fill="currentColor" fill-rule="evenodd" d="M51.5-1c-.754 0-1.364.61-1.364 1.364v4.772h-4.772a1.363 1.363 0 1 0 0 2.728h4.772v4.772a1.363 1.363 0 1 0 2.728 0V7.864h4.772a1.363 1.363 0 1 0 0-2.728h-4.772V.364C52.864-.39 52.254-1 51.5-1zM18.608 15l-4.824 8.323H4.135A4.139 4.139 0 0 0 0 27.483V53.84A4.139 4.139 0 0 0 4.135 58h42.73A4.139 4.139 0 0 0 51 53.839V27.484a4.139 4.139 0 0 0-4.135-4.161h-9.649L32.392 15H18.608zM25 29c6.059 0 11 4.941 11 11s-4.941 11-11 11-11-4.941-11-11 4.941-11 11-11zm0 3c-4.435 0-8 3.565-8 8 0 4.435 3.565 8 8 8 4.435 0 8-3.565 8-8 0-4.435-3.565-8-8-8z" opacity=".5"></path>
+                        </svg>
+                    </label>
+                    <div class="profile-personal-edit-btn">
+                        <a class="btn-outline" href="#!">
+                            Редактировать
+                        </a>
+                        <a class="btn-fill" href="#!">
+                            Сохранить
+                        </a>
+                    </div>
+                    <div class="profile-personal-info">
+                        <div class="profile-personal-info__item">
+                            <span>
+                                Дата регистрации:
+                            </span>
+                            <span>
+                                01.04.2020
+                            </span>
+                        </div>
+                        <div class="profile-personal-info__item">
+                            <span>
+                                СНИЛС №
+                            </span>
+                            <span>
+                                143-156-521 36
+                            </span>
+                        </div>
+                        <div class="profile-personal-info__item">
+                            Азиза Тахировна Астанова
+                        </div>
+                        <div class="profile-personal-info__item">
+                            <span>
+                                40 
+                            </span>
+                            <span>
+                                лет
+                            </span>
+                        </div>
+                        <div class="profile-personal-info__editable">
+                            <div class="profile-personal-info__editable-item">
+                                <input type="text" disabled>
+                            </div>
+                            <div class="profile-personal-info__editable-item">
+                                <input type="email" value="aastanova@yahoo.com" disabled>
+                            </div>
+                            <div class="profile-personal-info__editable-item">
+                                <input type="tel" value="+7 (925) 370-51-54" disabled>
+                            </div>
+                            <div class="profile-personal-info__editable-item">
+                                <input type="tel" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-personal-awards">
+                        <span>
+                            Награды
+                        </span>
+                        <ul class="user-account-sidebar-awards">
+                            <li class="award-place" style="background: url(assets/images/svg/medal-1.svg) no-repeat;">
+                                <div class="award-place-text">
+                                    Пользователь добавил элемент в план 
+                                </div>
+                            </li>
+                            <li class="award-place" style="background: url(assets/images/svg/medal-2.svg) no-repeat;">
+                                <div class="award-place-text">
+                                    Пользователь завершил формирование пятилетних циклов обучения (прошел визард).
+                                </div>
+                            </li>
+                            <li class="award-place" style="background: url(assets/images/svg/medal-3.svg) no-repeat;"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-main-navigation">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button 
+                            class="nav-link active" 
+                            id="first-pills-tab" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#first-pills" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="first-pills" 
+                            aria-selected="true">Должности</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button 
+                            class="nav-link" 
+                            id="second-pills-tab" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#second-pills" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="second-pills" 
+                            aria-selected="false">Пятилетние циклы и документы</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button 
+                            class="nav-link" 
+                            id="third-pills-tab" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#third-pills" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="third-pills" 
+                            aria-selected="false">Настройки</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button 
+                            class="nav-link" 
+                            id="fourth-pills-tab" 
+                            data-bs-toggle="pill" 
+                            data-bs-target="#fourth-pills" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="fourth-pills" 
+                            aria-selected="false">Статистика</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" 
+                        id="first-pills" 
+                        role="tabpanel" 
+                        aria-labelledby="first-pills-tab">
+                            1
+                        </div>
+                        <div class="tab-pane" 
+                        id="second-pills" 
+                        role="tabpanel" 
+                        aria-labelledby="second-pills-tab">
+                            2
+                        </div>
+                        <div class="tab-pane" 
+                        id="third-pills" 
+                        role="tabpanel" 
+                        aria-labelledby="third-pills-tab">
+                            3
+                        </div>
+                        <div class="tab-pane" 
+                        id="fourth-pills" 
+                        role="tabpanel" 
+                        aria-labelledby="fourth-pills-tab">
+                            4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/scripts/jquery-3.6.0.min.js"></script>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/imask.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

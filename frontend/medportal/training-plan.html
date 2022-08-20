@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/swiper-bundle.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>MedPortal</title>
+</head>
+<body>
+    <div class="wrapper user-account">
+        <header class="header">
+            <div class="header-content">
+                <div class="header-content-logo">
+                    <a href="#!">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                </div><!-- ./header-content-logo -->
+                <div class="header-content-nav">
+                    <ul class="desktop-link-list">
+                        <li>
+                            <a href="#!" class="active">
+                                <span>
+                                    Формирование траектории
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>
+                                    Мой план
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>
+                                    Портфолио
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <span>
+                                    Расписание
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.6998 18.1C35.3998 28.2 27.6998 35.8 17.8998 35.8C7.69982 35.7 0.199816 27.8 0.299816 18C0.399816 7.79999 8.19982 0.299988 17.9998 0.299988C27.9998 0.299988 35.4998 8.09999 35.6998 18.1ZM18.0998 2.39999C9.49982 2.39999 2.49982 9.39999 2.39982 17.9C2.29982 26.5 9.39982 33.6 17.8998 33.7C26.3998 33.7 33.4998 26.8 33.5998 18.2C33.6998 9.59999 26.5998 2.49999 18.0998 2.39999Z" fill="#195EA0"/>
+                                    <path d="M23.8002 15C23.8002 16.4 22.9002 17.9 21.6002 19.1C20.4002 20.3 19.1002 21.3 18.8002 23.1C18.8002 23.4 18.1002 23.8 17.8002 23.7C17.5002 23.6 17.0002 23 17.0002 22.8C17.3002 21.7 17.6002 20.5 18.2002 19.6C18.8002 18.6 19.9002 17.9 20.6002 17C21.7002 15.7 21.9002 14.2 21.1002 12.7C20.4002 11.3 19.0002 10.6 17.4002 10.8C15.9002 11 14.8002 11.9 14.4002 13.3C14.3002 13.6 14.2002 14.3 14.0002 14.6C13.7002 15 13.6002 15.4 13.1002 15.4C12.6002 15.4 12.2002 14.6 12.2002 14.2C12.2002 11.9 13.4002 10.2 15.4002 9.29998C17.6002 8.19998 19.7002 8.49998 21.6002 9.99998C23.1002 11.1 23.8002 12.7 23.8002 15Z" fill="#195EA0"/>
+                                    <path d="M18.0994 28.6C19.0383 28.6 19.7994 27.8389 19.7994 26.9C19.7994 25.9611 19.0383 25.2 18.0994 25.2C17.1605 25.2 16.3994 25.9611 16.3994 26.9C16.3994 27.8389 17.1605 28.6 18.0994 28.6Z" fill="#195EA0"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="visually-impaired">
+                            <a href="#!">
+                                <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.1 9C20.5 13.4 16.3 16.5 11.4 16.5C6.50005 16.5 2.40005 13.4 0.800049 9C2.40005 4.6 6.60005 1.5 11.5 1.5C16.4 1.5 20.5 4.7 22.1 9Z" stroke="#195EA0" stroke-width="1.5" stroke-miterlimit="10"/>
+                                    <path d="M11.5001 12.8C13.5988 12.8 15.3001 11.0987 15.3001 9C15.3001 6.90131 13.5988 5.2 11.5001 5.2C9.40139 5.2 7.70007 6.90131 7.70007 9C7.70007 11.0987 9.40139 12.8 11.5001 12.8Z" stroke="#195EA0" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <svg width="33" height="36" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_556_2350)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3586 0.00629966C15.7536 0.073604 15.2523 0.629256 15.2633 1.21934V2.49343C13.0841 2.75329 11.0571 3.73959 9.51186 5.29204C7.77229 7.02943 6.67386 9.34126 6.21186 11.8002L4.56186 20.5967C4.22243 22.4218 3.52314 22.7959 2.52686 23.4313C2.02871 23.7506 1.42057 24.0887 0.889429 24.6929C0.358286 25.2986 0 26.1799 0 27.2051C0 28.955 1.49286 30.4028 3.3 30.4028H10.3243C10.5411 33.5176 13.2314 36 16.5 36C19.7686 36 22.4604 33.5192 22.6757 30.4028H29.7C31.5071 30.4028 33 28.955 33 27.2051C33 26.1799 32.6417 25.2986 32.1106 24.6929C31.5794 24.0887 30.9713 23.7506 30.4731 23.4313C29.4769 22.7959 28.7776 22.4218 28.4366 20.5952L26.7866 11.8002C26.3261 9.34126 25.2277 7.0263 23.4866 5.29204C21.9417 3.7399 19.9154 2.75363 17.7367 2.49343V1.21934C17.7493 0.538474 17.0563 -0.0719612 16.3586 0.00629966ZM16.5 4.81621C18.6717 4.81621 20.3736 5.62073 21.7077 6.95273C23.0434 8.28473 23.9784 10.1755 24.3634 12.226L26.0134 21.0209C26.4817 23.5174 28.05 24.7477 29.1201 25.4301C29.6544 25.7729 30.0347 26.0249 30.228 26.244C30.4213 26.4616 30.5266 26.6338 30.5266 27.2051C30.5266 27.6684 30.1793 28.0033 29.7 28.0033H3.3C2.82229 28.0033 2.475 27.6684 2.475 27.2051C2.475 26.6338 2.57871 26.4616 2.772 26.2425C2.96529 26.0233 3.34557 25.7729 3.87986 25.4301C4.95 24.7477 6.51829 23.5174 6.98657 21.0209L8.63657 12.2244C9.02157 10.174 9.95814 8.28473 11.2923 6.95273C12.628 5.62073 14.3283 4.81621 16.5 4.81621ZM12.8653 30.4028H20.1347C20.0374 31.2911 19.6109 32.1112 18.9388 32.7029C18.2666 33.2945 17.397 33.6152 16.5 33.6021C14.5671 33.6021 13.0743 32.2138 12.8653 30.4028Z" fill="#195EA0"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_556_2350">
+                                    <rect width="33" height="36" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.3602 26.0743C3.4802 26.0743 1.2002 23.8225 1.2002 20.978V7.4669C1.2002 4.62246 3.4802 2.37061 6.3602 2.37061H27.6002C30.4802 2.37061 32.7602 4.62246 32.7602 7.4669V21.0965C32.7602 23.8225 30.6002 26.0743 27.8402 26.1928C26.8802 26.1928 26.1602 26.3113 25.6802 26.3113L22.2002 29.8669C21.3602 30.6965 20.0402 30.6965 19.2002 29.8669C18.8402 29.5113 18.6002 28.9188 18.6002 28.3262V26.0743H6.3602Z" stroke="#195EA0" stroke-width="2"/>
+                                    <path d="M10.6547 16.3681C11.5163 16.3681 12.2147 15.6783 12.2147 14.8274C12.2147 13.9764 11.5163 13.2866 10.6547 13.2866C9.79316 13.2866 9.09473 13.9764 9.09473 14.8274C9.09473 15.6783 9.79316 16.3681 10.6547 16.3681Z" fill="#195EA0"/>
+                                    <path d="M17.0151 16.3681C17.8766 16.3681 18.5751 15.6783 18.5751 14.8274C18.5751 13.9764 17.8766 13.2866 17.0151 13.2866C16.1535 13.2866 15.4551 13.9764 15.4551 14.8274C15.4551 15.6783 16.1535 16.3681 17.0151 16.3681Z" fill="#195EA0"/>
+                                    <path d="M23.2543 16.3681C24.1159 16.3681 24.8143 15.6783 24.8143 14.8274C24.8143 13.9764 24.1159 13.2866 23.2543 13.2866C22.3928 13.2866 21.6943 13.9764 21.6943 14.8274C21.6943 15.6783 22.3928 16.3681 23.2543 16.3681Z" fill="#195EA0"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <svg width="8" height="38" viewBox="0 0 8 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="34" r="4" fill="#195EA0"/>
+                                    <circle cx="4" cy="19" r="4" fill="#195EA0"/>
+                                    <circle cx="4" cy="4" r="4" fill="#195EA0"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="dropdown mobile-header-content-nav">
+                            <a href="#!" class="dropdown-btn mobile-menu-btn">
+                                <img src="assets/images/mobile-menu-btn.png" alt="">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <ul class="dropdown-menu mobile-link-list">
+                                <li>
+                                    <a href="#!">
+                                        <span>
+                                            Нормативно-правовая база
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <span>
+                                            Специалистам
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <span>
+                                            Организациям
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <span>
+                                            Справочные материалы
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- ./header-content-nav -->
+            </div><!-- ./header-content -->
+        </header>
+        <main class="main">
+            <div class="user-account-container">
+                <aside>
+                    <div class="user-account-sidebar">
+                        <div class="user-account-sidebar-title">
+                            МОИ ПЯТИЛЕТНИЕ ЦИКЛЫ
+                        </div>
+                        <ul class="user-account-sidebar-loop">
+                            <li class="active">
+                                <a href="#!">
+                                    Общая врачебная практика (семейная медицина)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    Педиатрия
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="user-account-sidebar-info">
+                            <li>
+                                <a href="#!">
+                                    Обучение вне моих специальностей
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="user-account-sidebar-title gray-color">
+                            МОЙ ПРОГРЕСС, ЗЕТ
+                        </div>
+                        <ul class="user-account-sidebar-progress">
+                            <li>
+                                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_547_1544)">
+                                    <path d="M21.8002 9.8999V21.5999H2.2002V9.8999" stroke="#1C314E"/>
+                                    <path d="M0.5 9.6001H23.5V5.1001H0.5V9.6001Z" stroke="#1C314E"/>
+                                    <path d="M12.7 4.7002C13.2 3.5002 14.7 1.7002 16.4 1.7002C17.3 1.7002 17.9 2.6002 17.9 3.4002C17.9 4.2002 17.1 4.6002 16.2 4.7002H12.7ZM16.5 0.200195C14.2 0.200195 12.8 1.9002 12 3.5002C11.2 2.0002 9.8 0.200195 7.5 0.200195C5.7 0.200195 4.5 1.7002 4.5 3.5002C4.5 4.0002 4.7 4.4002 5.1 4.8002H7.5C6.7 4.7002 6.1 4.3002 6 3.5002C6.1 2.5002 6.6 1.9002 7.5 1.7002C9.3 1.7002 10.7 3.5002 11.2 4.7002H19.2C19.4 4.2002 19.6 4.0002 19.6 3.4002C19.5 1.7002 18.2 0.200195 16.5 0.200195Z" fill="#1C314E"/>
+                                    <path d="M12 4.7002V21.9002" stroke="#1C314E"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_547_1544">
+                                    <rect width="24" height="22" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>
+                                    1
+                                </span>
+                            </li>
+                            <li>
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_547_1538)">
+                                    <path d="M20.5 18.5H0.5V21.5H20.5V18.5Z" stroke="#1C314E"/>
+                                    <path d="M0.5 7.5H20.6L10.5 0.5L0.5 7.5Z" stroke="#1C314E" stroke-width="0.9879" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.5 7V19" stroke="#1C314E" stroke-width="1.044" stroke-miterlimit="10"/>
+                                    <path d="M10.5 7V19" stroke="#1C314E" stroke-width="1.044" stroke-miterlimit="10"/>
+                                    <path d="M3.5 7V19" stroke="#1C314E" stroke-width="1.044" stroke-miterlimit="10"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_547_1538">
+                                    <rect width="21" height="22" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>
+                                    72
+                                </span>
+                            </li>
+                            <li>
+                                <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.3 0.5H20.5C22.1 0.5 23.3 1.8 23.3 3.3V13.3C23.3 14.9 22 16.1 20.5 16.1H3.3C1.7 16.1 0.5 14.8 0.5 13.3V3.4C0.5 1.8 1.7 0.5 3.3 0.5Z" stroke="#1C314E"/>
+                                    <path d="M11.7998 16.6001V20.5001" stroke="#1C314E" stroke-linecap="square"/>
+                                    <path d="M9 20.5H14.7" stroke="#1C314E" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M0.799805 13.3999H22.9998" stroke="#1C314E" stroke-linecap="square"/>
+                                </svg>
+                                <span>
+                                    14
+                                </span>
+                            </li>
+                            <li>
+                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 0.700195H12C13.6 0.700195 15 2.0002 15 3.7002V11.0002C15 12.6002 13.7 14.0002 12 14.0002H9C7.4 14.0002 6 12.7002 6 11.0002V3.6002C6 2.0002 7.3 0.700195 9 0.700195Z" stroke="#1C314E"/>
+                                    <path d="M17.7996 9.6001C17.7996 10.6001 17.7996 12.0001 17.7996 14.0001C17.7996 15.6001 16.8996 17.0001 15.5996 17.0001H5.29961C3.99961 17.0001 3.09961 15.7001 3.09961 14.0001C3.09961 12.0001 3.09961 10.6001 3.09961 9.6001" stroke="#1C314E" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.3994 17.9004V21.3004" stroke="#1C314E" stroke-linecap="square"/>
+                                    <path d="M7.5 21.3003H13.4" stroke="#1C314E" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>
+                                    7
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="user-account-sidebar-title gray-color">
+                            Мои награды
+                        </div>
+                        <ul class="user-account-sidebar-awards">
+                            <li class="award-place" style="background: url(assets/images/svg/medal-1.svg) no-repeat;">
+                                <div class="award-place-text">
+                                    Пользователь добавил элемент в план 
+                                </div>
+                            </li>
+                            <li class="award-place" style="background: url(assets/images/svg/medal-2.svg) no-repeat;">
+                                <div class="award-place-text">
+                                    Пользователь завершил формирование пятилетних циклов обучения (прошел визард).
+                                </div>
+                            </li>
+                            <li class="award-place" style="background: url(assets/images/svg/medal-3.svg) no-repeat;"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="user-account-sidebar-title gray-color">
+                            ОСВОЕНИЕ ПЯТИЛЕТНЕГО ЦИКЛА (ЗЕТ)
+                        </div>
+                        <div class="user-account-stacked-bar">
+                            <canvas id="bar"></canvas>
+                        </div>
+                        <div class="user-account-sidebar-title gray-color">
+                            МОЙ НАБОР ЗЕТ ПО ФОРМЕ ОБУЧЕНИЯ
+                        </div>
+                        <div class="user-account-pie">
+                            <canvas id="pie1"></canvas>
+                        </div>
+                        <div class="user-account-sidebar-title gray-color">
+                            МОЙ НАБОР ЗЕТ ЗА ВСЕ ВРЕМЯ
+                        </div>
+                        <div class="user-account-pie">
+                            <canvas id="pie2"></canvas>
+                        </div>
+                    </div>
+                </aside>
+                <div class="user-account-content">
+                    <div class="user-account-content-date">
+                        ОБЩАЯ ВРАЧЕБНАЯ ПРАКТИКА (СЕМЕЙНАЯ МЕДИЦИНА) 31.08.2015 - 30.08.2020
+                    </div>
+                    <h1 class="title">
+                        Мой план обучения
+                        <a href="#!" class="btn-outline">
+                            Добавить элементы
+                        </a>
+                    </h1>
+                    <div class="user-account-progress">
+                        <ul class="user-account-progress-count">
+                            <li>
+                                74 ЗЕТ получено
+                            </li>
+                            <li>
+                                1 ЗЕТ запланировано
+                            </li>
+                            <li>
+                                250 ЗЕТ необходимо
+                            </li>
+                        </ul>
+                        <div class="user-account-progress-line">
+                            <div class="user-account-progress-line__planed" style="width: 70%"></div>
+                            <div class="user-account-progress-line__complited" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox">           
+                        <span class="slider"></span>
+                        <p class="off">Не освоено</p>
+                        <p class="on">Освоено</p>
+                    </label>
+                    <div class="show-helper">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.6998 18.1C35.3998 28.2 27.6998 35.8 17.8998 35.8C7.69982 35.7 0.199816 27.8 0.299816 18C0.399816 7.79999 8.19982 0.299988 17.9998 0.299988C27.9998 0.299988 35.4998 8.09999 35.6998 18.1ZM18.0998 2.39999C9.49982 2.39999 2.49982 9.39999 2.39982 17.9C2.29982 26.5 9.39982 33.6 17.8998 33.7C26.3998 33.7 33.4998 26.8 33.5998 18.2C33.6998 9.59999 26.5998 2.49999 18.0998 2.39999Z" fill="#195EA0"/>
+                            <path d="M23.8002 15C23.8002 16.4 22.9002 17.9 21.6002 19.1C20.4002 20.3 19.1002 21.3 18.8002 23.1C18.8002 23.4 18.1002 23.8 17.8002 23.7C17.5002 23.6 17.0002 23 17.0002 22.8C17.3002 21.7 17.6002 20.5 18.2002 19.6C18.8002 18.6 19.9002 17.9 20.6002 17C21.7002 15.7 21.9002 14.2 21.1002 12.7C20.4002 11.3 19.0002 10.6 17.4002 10.8C15.9002 11 14.8002 11.9 14.4002 13.3C14.3002 13.6 14.2002 14.3 14.0002 14.6C13.7002 15 13.6002 15.4 13.1002 15.4C12.6002 15.4 12.2002 14.6 12.2002 14.2C12.2002 11.9 13.4002 10.2 15.4002 9.29998C17.6002 8.19998 19.7002 8.49998 21.6002 9.99998C23.1002 11.1 23.8002 12.7 23.8002 15Z" fill="#195EA0"/>
+                            <path d="M18.0994 28.6C19.0383 28.6 19.7994 27.8389 19.7994 26.9C19.7994 25.9611 19.0383 25.2 18.0994 25.2C17.1605 25.2 16.3994 25.9611 16.3994 26.9C16.3994 27.8389 17.1605 28.6 18.0994 28.6Z" fill="#195EA0"/>
+                        </svg>
+                    </div>
+                    <div class="helper">
+                        <div class="helper-face">
+                            <svg width="49" height="69" viewBox="0 0 49 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.2613 9.36138C16.5951 11.0261 14.3299 11.4471 13.4548 13.0088C12.9596 13.8918 13.0052 15.3102 12.1189 15.9347C11.3323 16.4876 10.3687 16.1775 10.0471 17.4387C9.44195 19.8048 13.2571 19.7393 14.3815 18.7637C15.199 18.0536 15.1388 17.5619 15.4801 16.6457C15.8541 15.643 16.7799 14.8587 17.7118 14.4167C18.911 13.849 20.2589 13.711 21.5793 13.6324C22.3401 13.587 23.1826 13.5223 23.7053 12.9599C24.7618 11.8227 24.3784 9.39457 24.4325 7.9316C24.4927 6.28433 24.6552 4.2842 23.7938 2.80114C23.4001 2.12424 22.6977 1.69277 21.9791 1.40018C18.4279 -0.044454 14.519 1.68491 11.8696 4.12437C10.8191 5.09037 10.0953 6.14284 8.77143 6.76209C7.77079 7.23024 6.90427 7.88181 6.2432 8.78667C4.88151 10.6505 4.69153 13.1826 6.17271 15.0386" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.4493 19.6047C12.5817 21.1708 11.9086 22.7848 10.7102 23.7788C9.86004 24.4828 8.78719 24.8784 7.97397 25.6252C7.16074 26.372 6.68363 27.7301 7.38425 28.587C7.69028 28.9599 8.1777 29.1844 8.36769 29.6298C8.62902 30.2403 8.13644 30.9819 7.50288 31.1548C6.87018 31.3277 6.19277 31.064 5.66065 30.6753C3.69979 29.2455 3.41955 25.972 5.1079 24.219" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.3047 26.6047C16.0635 25.7086 17.7321 25.5409 19.6362 25.4745C20.1314 25.457 20.6472 25.4771 21.0865 25.7103C22.1043 26.251 22.2788 27.6319 22.3123 28.7987C22.3905 31.5518 22.3871 34.3074 22.302 37.0604" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2998 29.0101C17.3305 28.8354 18.455 29.1463 19.1865 29.9769C19.3524 30.1656 19.5037 30.4014 19.496 30.6661C19.465 31.6653 17.732 31.8321 17.1242 31.8906C16.4262 31.957 14.2693 31.6495 14.0862 30.5997C13.9289 29.6974 15.662 29.1184 16.2998 29.0101Z" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.09904 11.8787C2.09457 13.4823 0.697638 17.5891 2.66709 20.5473" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.4886 24.312C10.6064 25.9226 10.9786 27.7236 10.6777 29.3141C10.3511 31.0417 10.1396 33.0113 10.5849 34.738C11.0302 36.4613 12.3283 37.8063 12.9317 39.4649C13.5361 41.1244 13.6152 43.2713 13.4965 45.0207" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24.7185 43.5276C24.2362 43.601 23.3808 43.3163 23.0722 42.9311C22.9235 42.7459 22.841 42.5162 22.7275 42.3066C22.1068 41.1659 20.2887 41.1965 20.5191 39.5082C20.6308 38.6942 21.2833 38.0207 22.0493 37.7561" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.0615 50.4062C17.8412 50.208 18.3862 49.5049 18.8143 48.814C19.2433 48.1231 19.6465 47.3685 20.3299 46.9379C20.8276 46.6243 21.4199 46.5195 21.995 46.4103C22.5702 46.3012 23.1633 46.1745 23.6396 45.8304C24.4098 45.2723 24.3359 44.3499 24.4021 43.4949" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.703 41.5288C20.146 43.0599 16.9068 43.3473 15.6578 43.9045C13.9307 44.6749 11.6621 46.8829 11.6406 48.9546C11.6432 48.807 11.6466 48.6603 11.6492 48.5127" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.89453 31.614C7.02348 33.9391 6.75699 36.7672 8.15134 38.7533C8.33186 39.011 8.56827 39.273 8.87946 39.301" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.52999 48.5879C7.18292 48.5879 6.01036 47.3931 5.77654 46.0445C5.25731 43.054 9.03719 41.6958 8.98389 38.9751" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.36864 48.5835C7.12364 50.4334 9.01573 51.7627 7.99446 53.3855C7.53369 54.1175 7.21734 54.9638 7.2139 55.8329C7.20874 56.9797 7.78127 58.1134 8.70024 58.778C9.6192 59.4436 10.8605 59.6218 11.9256 59.2427" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.5641 59.5188C10.4798 60.1197 10.8056 60.7267 11.2793 61.097C11.753 61.4674 12.3521 61.6316 12.9453 61.7076C13.1783 61.7364 13.4233 61.7573 13.6227 61.884C13.9365 62.084 14.0482 62.4832 14.2004 62.8264C14.6534 63.8509 15.6876 64.5837 16.7905 64.6615C18.1539 64.7584 18.2072 65.1113 18.8562 66.2869C19.2293 66.9629 19.9523 67.3804 20.695 67.5533C21.9295 67.8416 24.1285 67.1987 24.554 65.7628L24.4018 60.3459C24.45 57.8636 25.0302 53.0389 22.061 51.9235C21.4343 51.6877 20.7509 51.6685 20.0959 51.5322C19.1098 51.3279 18.3946 50.6466 18.2141 49.6387" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.90828 20.9285C2.13201 23.6858 0.385206 25.9218 0.980943 28.9884C1.29386 30.5955 2.17757 32.1239 3.53926 33.0035C3.5874 33.0349 3.64929 33.0664 3.70001 33.0384C3.75073 33.0105 3.72236 32.903 3.67078 32.9292" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.51467 32.3081C1.95676 34.1414 2.19402 36.2088 3.15167 37.863C4.10846 39.5173 5.77102 40.7331 7.61926 41.1296" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M31.4673 9.38116C32.1336 11.0459 34.3987 11.4669 35.2739 13.0285C35.769 13.9116 35.7235 15.33 36.6098 15.9545C37.3963 16.5074 38.36 16.1973 38.6815 17.4585C39.2867 19.8246 35.4716 19.7591 34.3472 18.7835C33.5296 18.0734 33.5898 17.5817 33.2485 16.6655C32.8746 15.6628 31.9487 14.8784 31.0169 14.4365C29.8177 13.8688 28.4697 13.7308 27.1493 13.6522C26.3885 13.6068 25.5461 13.5421 25.0234 12.9796C23.9669 11.8424 24.3503 9.41435 24.2961 7.95137C24.2351 6.30411 24.0735 4.30398 24.9349 2.82092C25.3286 2.14402 26.0309 1.71255 26.7496 1.41995C30.3008 -0.0246785 34.2096 1.70469 36.8591 4.14414C37.9095 5.11014 38.6334 6.16261 39.9572 6.78187C40.9579 7.25002 41.8244 7.90159 42.4855 8.80645C43.8471 10.6703 44.0371 13.2024 42.5559 15.0584" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M36.2801 19.6245C36.1478 21.1905 36.8209 22.8046 38.0192 23.7986C38.8694 24.5025 39.9423 24.8982 40.7555 25.645C41.5687 26.3918 42.0458 27.7499 41.3452 28.6067C41.0392 28.9797 40.5517 29.2042 40.3618 29.6496C40.1004 30.2601 40.593 31.0017 41.2266 31.1746C41.8593 31.3475 42.5367 31.0838 43.0688 30.6951C45.0297 29.2653 45.3099 25.9917 43.6216 24.2388" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M34.4242 26.6245C32.6653 25.7284 30.9968 25.5607 29.0926 25.4943C28.5975 25.4768 28.0817 25.4969 27.6424 25.7301C26.6246 26.2708 26.4501 27.6516 26.4166 28.8185C26.3383 31.5715 26.3418 34.3272 26.4269 37.0802" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.4289 29.0296C31.3982 28.8549 30.2737 29.1658 29.5422 29.9965C29.3763 30.1851 29.225 30.421 29.2327 30.6856C29.2637 31.6848 30.9967 31.8516 31.6045 31.9101C32.3025 31.9765 34.4594 31.6691 34.6425 30.6192C34.7998 29.717 33.0667 29.1379 32.4289 29.0296Z" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M43.6299 11.8984C46.6344 13.502 48.0313 17.6088 46.0618 20.5671" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M38.2402 24.3318C38.1225 25.9424 37.7502 27.7434 38.0511 29.3338C38.3778 31.0615 38.5893 33.031 38.144 34.7578C37.6987 36.481 36.4006 37.8261 35.7971 39.4847C35.1928 41.1442 35.1137 43.2911 35.2323 45.0405" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24.0098 43.5472C24.492 43.6205 25.3474 43.3358 25.656 42.9506C25.8047 42.7655 25.8872 42.5358 26.0007 42.3261C26.6214 41.1855 28.4395 41.216 28.2092 39.5277C28.0974 38.7137 27.4449 38.0403 26.679 37.7756" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M31.6677 50.426C30.888 50.2277 30.343 49.5246 29.9149 48.8338C29.4859 48.1429 29.0827 47.3883 28.3993 46.9577C27.9016 46.6441 27.3093 46.5384 26.7342 46.4301C26.1591 46.3209 25.5659 46.1943 25.0897 45.8502C24.3194 45.2921 24.3933 44.3697 24.3271 43.5146" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28.0264 41.5486C28.5834 43.0797 31.8226 43.367 33.0716 43.9243C34.7987 44.6946 37.0673 46.9026 37.0888 48.9744C37.0862 48.8268 37.0828 48.68 37.0802 48.5324" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M41.8336 31.6338C41.7046 33.9588 41.9711 36.787 40.5768 38.7731C40.3962 39.0308 40.1598 39.2928 39.8486 39.3207" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M40.1986 48.6077C41.5457 48.6077 42.7182 47.4129 42.9521 46.0643C43.4713 43.0737 39.6914 41.7156 39.7447 38.9949" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M41.3597 48.603C41.6047 50.4529 39.7126 51.7823 40.7339 53.4051C41.1947 54.137 41.511 54.9833 41.5145 55.8524C41.5196 56.9992 40.9471 58.1329 40.0281 58.7976C39.1092 59.4631 37.8678 59.6413 36.8027 59.2622" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M38.1647 59.5385C38.249 60.1395 37.9232 60.7465 37.4495 61.1168C36.9758 61.4871 36.3767 61.6513 35.7835 61.7273C35.5505 61.7562 35.3055 61.7771 35.1061 61.9038C34.7923 62.1038 34.6806 62.5029 34.5284 62.8462C34.0754 63.8707 33.0412 64.6035 31.9383 64.6812C30.5749 64.7782 30.5216 65.131 29.8726 66.3067C29.4995 66.9827 28.7765 67.4002 28.0338 67.5731C26.7993 67.8613 24.6003 67.2185 24.1748 65.7826L24.327 60.3657C24.2788 57.8834 23.6986 53.0587 26.6678 51.9433C27.2945 51.7075 27.9779 51.6883 28.6329 51.552C29.619 51.3476 30.3342 50.6664 30.5147 49.6584" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M45.8203 20.9482C46.5966 23.7056 48.3434 25.9416 47.7477 29.0081C47.4348 30.6152 46.551 32.1437 45.1894 33.0232C45.1412 33.0547 45.0793 33.0861 45.0286 33.0582C44.9779 33.0302 45.0062 32.9228 45.0578 32.949" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M46.215 32.3279C46.772 34.1612 46.5356 36.2286 45.578 37.8828C44.6212 39.5371 42.9586 40.7529 41.1104 41.1494" stroke="#195EA0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="helper-quote">
+                            <div class="helper-triangle"></div>
+                            <div class="helper-text">
+                                — Ваш план может содержать различные образовательные элементы выбранные с учётом персональных рекомендаций, а также по Вашим интересам.
+                                <br>
+                                Если Вы обучаетесь одновременно по нескольким специальностям, то обратите внимание на элементы, помеченные значком <span class="green-circle">×2</span>. Они могут быть зачислены сразу в несколько Ваших планов обучения. 
+                                <br> 
+                                <a href="#!">Добавить все подходящие образовательные элементы в данный план.</a>
+                            </div>
+                            <div class="hide-helper">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="17.0005" width="24" height="1" transform="rotate(-45 0 17.0005)" fill="#A1A1A1"/>
+                                    <rect width="24" height="1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 18 17.0005)" fill="#A1A1A1"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapse-1" aria-expanded="true" aria-controls="accordionCollapse-1">
+                                <span class="accordion-icon"></span>
+                                Образовательные элементы вне тем
+                                <a href="#!" class="accordion-show-elem">
+                                    Показать элементы
+                                </a>
+                                <a href="#!" class="accordion-hide-elem">
+                                    Добавить элемент
+                                </a>
+                            </button>
+                          <div id="accordionCollapse-1" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Элементы не добавлены
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapse-2" aria-expanded="true" aria-controls="accordionCollapse-2">
+                                <span class="accordion-icon"></span>
+                                Рекомендованные назначенные образовательные элементы
+                                <a href="#!" class="accordion-show-elem">
+                                    Показать элементы
+                                </a>
+                                <a href="#!" class="accordion-hide-elem">
+                                    Добавить элемент
+                                </a>
+                            </button>
+                          <div id="accordionCollapse-2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <a href="#!" class="accordion-table">
+                                    <div class="accordion-table-item">
+                                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.3 0.5H20.5C22.1 0.5 23.3 1.8 23.3 3.3V13.3C23.3 14.9 22 16.1 20.5 16.1H3.3C1.7 16.1 0.5 14.8 0.5 13.3V3.4C0.5 1.8 1.7 0.5 3.3 0.5Z" stroke="#1C314E"/>
+                                            <path d="M11.7998 16.6001V20.5001" stroke="#1C314E" stroke-linecap="square"/>
+                                            <path d="M9 20.5H14.7" stroke="#1C314E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M0.799805 13.3999H22.9998" stroke="#1C314E" stroke-linecap="square"/>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        ИОМ
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        Пациент с болью в ухе в практике врача первичного звена
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        Заочное
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        <button class="training-link">
+                                            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(1.000000, 1.000000)">
+                                                    <polygon fill="currentColor" points="11 7.5 6 11 6 4"></polygon>
+                                                    <circle stroke="currentColor" cx="7.5" cy="7.5" r="7.5"></circle>
+                                                </g>
+                                                </g>
+                                            </svg>
+                                            Перейти к обучению
+                                        </button>
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        1  ЗЕТ
+                                    </div>
+                                    <div class="accordion-table-item delete-col">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1" y="8.00049" width="10" height="3" transform="rotate(-45 1 8.00049)" fill="#A0A0A0"/>
+                                            <rect x="3" y="1.00049" width="10" height="3" transform="rotate(45 3 1.00049)" fill="#A0A0A0"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="#!" class="accordion-table">
+                                    <div class="accordion-table-item">
+                                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.3 0.5H20.5C22.1 0.5 23.3 1.8 23.3 3.3V13.3C23.3 14.9 22 16.1 20.5 16.1H3.3C1.7 16.1 0.5 14.8 0.5 13.3V3.4C0.5 1.8 1.7 0.5 3.3 0.5Z" stroke="#1C314E"/>
+                                            <path d="M11.7998 16.6001V20.5001" stroke="#1C314E" stroke-linecap="square"/>
+                                            <path d="M9 20.5H14.7" stroke="#1C314E" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M0.799805 13.3999H22.9998" stroke="#1C314E" stroke-linecap="square"/>
+                                        </svg>
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        Lorem Lorem
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        Lorem
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        <button class="training-link">
+                                            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(1.000000, 1.000000)">
+                                                    <polygon fill="currentColor" points="11 7.5 6 11 6 4"></polygon>
+                                                    <circle stroke="currentColor" cx="7.5" cy="7.5" r="7.5"></circle>
+                                                </g>
+                                                </g>
+                                            </svg>
+                                            Перейти к обучению
+                                        </button>
+                                    </div>
+                                    <div class="accordion-table-item">
+                                        999  ЗЕТ
+                                        <span class="green-circle">×2</span>
+                                    </div>
+                                    <div class="accordion-table-item delete-col">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1" y="8.00049" width="10" height="3" transform="rotate(-45 1 8.00049)" fill="#A0A0A0"/>
+                                            <rect x="3" y="1.00049" width="10" height="3" transform="rotate(45 3 1.00049)" fill="#A0A0A0"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapse-3" aria-expanded="true" aria-controls="accordionCollapse-3">
+                                <span class="accordion-icon"></span>
+                                Образовательные элементы, удаленные из плана
+                                <a href="#!" class="accordion-show-elem">
+                                    Показать элементы
+                                </a>
+                                <a href="#!" class="accordion-hide-elem">
+                                    Добавить элемент
+                                </a>
+                            </button>
+                          <div id="accordionCollapse-3" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Элементы не добавлены
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/scripts/jquery-3.6.0.min.js"></script>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/imask.js"></script>
+    <script src="assets/scripts/chart.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <script>
+    //STACKED BAR
+        var ctx = document.getElementById("bar").getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["1 год", "2 год", "3 год", "4 год", "5 год"],
+            datasets: [{
+                label: 'ИОМ',
+                stack: "A",
+                backgroundColor: "rgb(224, 233, 255)",
+                data: [0, 0, 0, 0, 2],
+            }, {
+                label: 'ОМ',
+                backgroundColor: "rgb(255, 184, 108)",
+                stack: "A",
+                data: [0, 0, 0, 0, 0],
+            }, {
+                label: 'ДПП ПК',
+                backgroundColor: "rgb(14, 128, 201)",
+                stack: "A",
+                data: [0, 0, 0, 0, 72],
+            }],
+	    },
+        options: {
+        tooltips: {
+            displayColors: true,
+            callbacks:{
+                mode: 'x',
+            },
+        },
+        scales: {
+            x:{
+                grid: {
+                    display: false  
+                }
+            },
+            y:{
+                display: false
+            }
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins:{
+            legend: { 
+                position: 'bottom',
+                labels: {
+                    boxWidth: 20,
+                    boxHeight: 20,
+                    usePointStyle: true,
+                    pointStyle: 'rectRounded'
+                }
+            }
+        }
+	    }
+        });
+    //STACKED BAR END
+    //STACKED BAR FIRST
+    var canvas = document.getElementById("pie1");
+    var ctx = canvas.getContext('2d');
+    var data = {
+        labels: ["Очная форма", "Заочная форма"],
+        datasets: [
+            {
+                backgroundColor: [
+                    'rgb(14, 128, 201)',
+                    'rgb(255, 184, 108)'],
+                data: [70, 30],
+                borderWidth: [0]
+            }
+        ]
+    };
+    var options = {
+        plugins:{
+            legend: { 
+                position: 'bottom',
+                labels: {
+                    boxWidth: 20,
+                    boxHeight: 20,
+                    usePointStyle: true,
+                    pointStyle: 'rectRounded'
+                }
+            }
+        }
+    };
+    var myBarChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options
+    });
+    //STACKED BAR FIRST END
+    //STACKED BAR SECOND
+    var canvas = document.getElementById("pie2");
+    var ctx = canvas.getContext('2d');
+    var data = {
+        labels: ["ОМ", "ИОМ", "ДПП ПК"],
+        datasets: [
+            {
+                backgroundColor: [
+                    'rgb(14, 128, 201)',
+                    'rgb(255, 184, 108)',
+                    'rgb(224, 233, 255)'],
+                data: [70, 20, 10],
+                borderWidth: [0]
+            }
+        ]
+    };
+    var options = {
+        plugins:{
+            legend: { 
+                position: 'bottom',
+                labels: {
+                    boxWidth: 20,
+                    boxHeight: 20,
+                    usePointStyle: true,
+                    pointStyle: 'rectRounded'
+                }
+            }
+        }
+    };
+    var myBarChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options
+    });
+    //STACKED BAR SECOND END
+    </script>      
+</body>
+</html>
